@@ -1,0 +1,9 @@
+{
+  "domestic_rate": 5.99,
+  "international_rate": 14.99,
+  "currency": "EUR",
+  "free_shipping_above": 50.00,
+  "estimated_days_domestic": 5,
+  "estimated_days_international": 14,
+  "domestic_countries": ["DE"]
+}

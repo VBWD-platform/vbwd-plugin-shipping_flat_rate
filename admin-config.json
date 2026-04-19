@@ -1,0 +1,22 @@
+{
+  "tabs": [
+    {
+      "id": "rates",
+      "label": "Shipping Rates",
+      "fields": [
+        { "key": "domestic_rate", "label": "Domestic Rate", "component": "input", "inputType": "number", "min": 0, "description": "Flat rate for domestic shipping" },
+        { "key": "international_rate", "label": "International Rate", "component": "input", "inputType": "number", "min": 0, "description": "Flat rate for international shipping" },
+        { "key": "currency", "label": "Currency", "component": "input", "inputType": "text" },
+        { "key": "free_shipping_above", "label": "Free Shipping Above", "component": "input", "inputType": "number", "min": 0, "description": "Order total above which shipping is free (0 = disabled)" }
+      ]
+    },
+    {
+      "id": "delivery",
+      "label": "Delivery Estimates",
+      "fields": [
+        { "key": "estimated_days_domestic", "label": "Domestic (days)", "component": "input", "inputType": "number", "min": 1, "max": 60 },
+        { "key": "estimated_days_international", "label": "International (days)", "component": "input", "inputType": "number", "min": 1, "max": 120 }
+      ]
+    }
+  ]
+}
