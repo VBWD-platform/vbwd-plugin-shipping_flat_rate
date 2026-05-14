@@ -32,9 +32,7 @@ class FlatRateShippingProvider(IShippingProvider):
         is_domestic = country in domestic_countries
 
         # Check free shipping threshold
-        cart_total = sum(
-            Decimal(str(item.get("total_price", 0))) for item in items
-        )
+        cart_total = sum(Decimal(str(item.get("total_price", 0))) for item in items)
         free_above = Decimal(str(self._config.get("free_shipping_above", 0)))
         if free_above > 0 and cart_total >= free_above:
             return [
