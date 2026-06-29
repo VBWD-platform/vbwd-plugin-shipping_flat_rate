@@ -18,7 +18,7 @@ class FlatRateShippingPlugin(BasePlugin):
     def metadata(self) -> PluginMetadata:
         return PluginMetadata(
             name="shipping-flat-rate",
-            version="1.0.0",
+            version="26.6",
             author="VBWD",
             description="Flat rate shipping — fixed domestic and international rates",
             dependencies=[],
